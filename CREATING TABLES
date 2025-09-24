@@ -1,0 +1,85 @@
+--24-5446-651
+--Sangbaan KACEY Royce Tyne E.
+INSERT INTO Student(student_id, first_name, last_name, age, address, gender)
+VALUES(001, 'Kacey', 'Sangbaan', 19, '62 Acacia St., San Fernando', 'MALE');
+
+INSERT INTO Student(student_id, first_name, last_name, age, address, gender)
+VALUES(002, 'John', 'Collado', 21, '56 Laurel St., Makati City', 'MALE');
+
+INSERT INTO Student(student_id, first_name, last_name, age, address, gender)
+VALUES(003, 'Mark', 'Labiano', 25, '101 Katipunan Ave., Quezon City', 'MALE');
+
+INSERT INTO Student(student_id, first_name, last_name, age, address, gender)
+VALUES(004, 'Brent', 'Mendiola', 12, '87 Rizal St., Cebu City', 'MALE');
+
+
+
+INSERT INTO INSTRUCTOR(Faculty_id, email, first_name, last_name, contact_num, address, gender)
+VALUES(1001, 'bluewave23@mail.com', 'Adrian', 'Morales', '0917-482-9314', '45 Pinecrest St., Quezon City', 'MALE');
+
+INSERT INTO INSTRUCTOR(Faculty_id, email, first_name, last_name, contact_num, address, gender)
+VALUES(1002, 'starpath88@outlook.com', 'Bianca', 'Santiago', '0998-214-5690', '12 Mabini Ave., Baguio City', 'FEMALE');
+
+INSERT INTO INSTRUCTOR(Faculty_id, email, first_name, last_name, contact_num, address, gender)
+VALUES(1003, 'nightowl55@gmail.com', 'Carlo', 'Mendoza', '0945-728-1132', '78 Sampaguita Dr., Pasig City', 'MALE');
+
+INSERT INTO INSTRUCTOR(Faculty_id, email, first_name, last_name, contact_num, address, gender)
+VALUES(1004, 'radiantcloud@ymail.com', 'Hannah', 'Torres', '0932-501-9843', '19 Mabuhay Rd., Cagayan de Oro', 'FEMALE');
+
+
+
+INSERT INTO COURSE(COURSE_CODE, COURSE_NAME, description, SCHEDULE)
+VALUES('cc5', 'Information Management', 'manupulating databases', '11:30-12:50');
+
+INSERT INTO COURSE(COURSE_CODE, COURSE_NAME, description, SCHEDULE)
+VALUES('cc8', 'Inroduction to Statistics', 'statisticss', '2:30-3:50');
+
+INSERT INTO COURSE(COURSE_CODE, COURSE_NAME, description, SCHEDULE)
+VALUES('cc2', 'Introduction to Programming', 'Java Programming', '8:30-9:50');
+
+INSERT INTO COURSE(COURSE_CODE, COURSE_NAME, description, SCHEDULE)
+VALUES('cc3', 'OOP', 'Object Oriented Programming', '10:30-11:50');
+
+
+
+
+CREATE TABLE Instructor(
+    Faculty_id INT NOT NULL,
+    email VARCHAR(100),
+    first_name VARCHAR(100),
+    last_name VARCHAR(100),
+    contact_num VARCHAR(100),
+    address VARCHAR(20),
+    gender VARCHAR(20),
+    CONSTRAINT pk_Instructor PRIMARY KEY (Faculty_id)
+);
+CREATE TABLE Student(
+    Student_id INT NOT NULL,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100),
+    age VARCHAR(100),
+    address VARCHAR(20),
+    gender VARCHAR(20),
+    CONSTRAINT pk_Student PRIMARY KEY (Student_id)
+);
+CREATE TABLE Course(
+    Course_code INT NOT NULL,
+    Course_name VARCHAR(100),
+    Desription VARCHAR(100),
+    Schedule VARCHAR(20),
+    CONSTRAINT pk_Course PRIMARY KEY (Course_code) 
+);
+CREATE TABLE Program(
+    Program_ID INT NOT NULL,
+    Program_name VARCHAR(50),
+    Description VARCHAR(100),
+    CONSTRAINT pk_program PRIMARY KEY(Program_ID)
+);
+
+
+
+
+
+
+
+
